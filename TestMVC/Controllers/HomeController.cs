@@ -18,6 +18,7 @@ namespace TestMVC.Controllers
 			var foobar = new FoobarView();
             foobar.FirstName = "Caree";
             foobar.LastName = "Youngman";
+            foobar.ProfileImagePath = "../Images/profile.jpg";
 
             // Returning the view, passing the model in, trying the controller (this) to the view
             return View(foobar);
