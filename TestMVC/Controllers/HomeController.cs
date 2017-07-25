@@ -17,6 +17,7 @@ namespace TestMVC.Controllers
 			// Pretending we got this from the Service Layer (db, etc)
 			var foobar = new FoobarView();
             foobar.FirstName = "Caree";
+            foobar.LastName = "Youngman";
 
             // Returning the view, passing the model in, trying the controller (this) to the view
             return View(foobar);
