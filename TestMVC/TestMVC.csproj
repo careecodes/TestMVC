@@ -65,6 +65,7 @@
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Styles\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
@@ -85,6 +86,7 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <Content Include="Images\profile.jpg" />
+    <Content Include="Styles\main.scss" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
