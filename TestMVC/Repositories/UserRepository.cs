@@ -19,8 +19,6 @@ namespace TestMVC.Repositories
 			foobar.ProfileImagePath = "../Images/profile.jpg";
 			foobar.formattedName = foobar.LastName + ", " + foobar.FirstName;
 
-			//foobar.age = new Adder().Add(1).Add(1.0).Add(foobar.FirstName).GetSum();
-
             users.Add(foobar);
 
 			return users;

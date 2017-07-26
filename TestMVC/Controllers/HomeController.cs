@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 
-// Declaring my model in the controller, tying the controller (this) to the model
 using TestMVC.Models;
 using TestMVC.Repositories;
 
@@ -15,12 +14,9 @@ namespace TestMVC.Controllers
     {
         public ActionResult Index()
         {
-            // Use the repository to get the users from the Unicorn Service Layer (db, etc)
             var users = UserRepository.GetUsers();
 
-			// Returning the view, passing the model in, tying the controller (this) to the view
 			return View("Index", users.First());
-          //return View(foobar);
         }
     }
 }
