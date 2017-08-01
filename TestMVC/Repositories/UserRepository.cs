@@ -18,13 +18,16 @@ namespace TestMVC.Repositories
 			user1.LastName = "Washington";
 			user1.ProfileImagePath = "http://www.placehold.it/200x200";
             user1.presidentialTerm = "1789-1797";
+			users.Add(user1);
 
 
-            var user2 = new UserModel();
+			var user2 = new UserModel();
 			user2.FirstName = "John";
 			user2.LastName = "Adams";
 			user2.ProfileImagePath = "http://www.placehold.it/200x200";
 			user2.presidentialTerm = "1797-1801";
+			users.Add(user2);
+
 
 
 			var user3 = new UserModel();
@@ -32,17 +35,14 @@ namespace TestMVC.Repositories
 			user3.LastName = "Jefferson";
 			user3.ProfileImagePath = "http://www.placehold.it/200x200";
 			user3.presidentialTerm = "1801-1809";
+			users.Add(user3);
+
 
 			var user4 = new UserModel();
 			user4.FirstName = "James";
 			user4.LastName = "Madison";
 			user4.ProfileImagePath = "http://www.placehold.it/200x200";
 			user4.presidentialTerm = "1809-1817";
-
-
-			users.Add(user1);
-			users.Add(user2);
-			users.Add(user3);
 			users.Add(user4);
 
 
