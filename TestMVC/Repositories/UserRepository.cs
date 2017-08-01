@@ -14,19 +14,27 @@ namespace TestMVC.Repositories
             var users = new List<UserModel>();
 
 			var user1 = new UserModel();
-			user1.FirstName = "Caree";
-			user1.LastName = "Youngman";
-			user1.ProfileImagePath = "../Images/profile.jpg";
-            user1.formattedName = $"{user1.LastName}, {user1.FirstName}"; //foobar.LastName + ", " + foobar.FirstName;
+			user1.FirstName = "George";
+			user1.LastName = "Washington";
+			user1.ProfileImagePath = "http://www.placehold.it/200x200";
+            user1.formattedName = $"{user1.LastName}, {user1.FirstName}"; 
 
 			var user2 = new UserModel();
-			user2.FirstName = "Johnny";
-			user2.LastName = "Appleseed";
-			user2.ProfileImagePath = "../Images/profile.jpg";
-			user2.formattedName = $"{user2.LastName}, {user2.FirstName}"; //foobar.LastName + ", " + foobar.FirstName;
+			user2.FirstName = "John";
+			user2.LastName = "Adams";
+			user2.ProfileImagePath = "http://www.placehold.it/200x200";
+			user2.formattedName = $"{user2.LastName}, {user2.FirstName}";
+
+			var user3 = new UserModel();
+			user3.FirstName = "Thomas";
+			user3.LastName = "Jefferson";
+			user3.ProfileImagePath = "http://www.placehold.it/200x200";
+			user3.formattedName = $"{user3.LastName}, {user3.FirstName}";
 
 			users.Add(user1);
 			users.Add(user2);
+			users.Add(user3);
+
 
 			return users;
         }
