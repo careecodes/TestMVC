@@ -45,11 +45,7 @@ namespace TestMVC.Repositories
 			user4.presidentialTerm = "1809-1817";
 			users.Add(user4);
 
-
-
 			return users;
         }
     }
 }
-
-// Testing my git configuration
