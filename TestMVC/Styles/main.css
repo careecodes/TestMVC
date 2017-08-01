@@ -59,9 +59,22 @@ table {
 
 */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #171723;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    margin-top: -65px;
+    padding: 15px;
+}
+
 .user-container {
     font-family: 'Zilla Slab', serif;
-    margin: 50px auto;
+    margin: 65px auto;
     text-align: center;
 }
 
