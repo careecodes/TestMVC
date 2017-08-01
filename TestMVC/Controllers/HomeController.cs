@@ -20,14 +20,3 @@ namespace TestMVC.Controllers
         }
     }
 }
-
-
-/*
-TODO:
-1) Remove cole's useless class additions
-2) Rename FoobarView to UserModel everywhere
-3) Add 3 new users to the list of users in the GetUsers method directly
-4) Add some design/styling to the site to make it so we can show more than one user
-
-Next week: Iterating the users in the view so we can display more than one on the home page
-*/

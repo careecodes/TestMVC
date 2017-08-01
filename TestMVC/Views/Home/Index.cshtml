@@ -1,10 +1,19 @@
-﻿<!-- Declaring my model here -->
-@model TestMVC.Models.FoobarView
+﻿@model TestMVC.Models.UserModel
 
-<!-- It RENDERS stuff from my model?-->
-<h2>@Model.FirstName @Model.LastName</h2>
+<div class="user">
+	<h2>@Model.FirstName @Model.LastName</h2>
+	<h3>@Model.formattedName</h3>
+	<img src="@Model.ProfileImagePath"/>
+</div>
 
-<h3>@Model.formattedName</h3>
+<div class="user">
+    <h2>@Model.FirstName @Model.LastName</h2>
+    <h3>@Model.formattedName</h3>
+    <img src="@Model.ProfileImagePath"/>
+</div>
 
-<!-- I want to display the profile.jpg here -- HOW?!?!?!? -->
-<img src="@Model.ProfileImagePath"/>
+<div class="user">
+    <h2>@Model.FirstName @Model.LastName</h2>
+    <h3>@Model.formattedName</h3>
+    <img src="@Model.ProfileImagePath"/>
+</div>
