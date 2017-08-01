@@ -33,10 +33,18 @@ namespace TestMVC.Repositories
 			user3.ProfileImagePath = "http://www.placehold.it/200x200";
 			user3.presidentialTerm = "1801-1809";
 
+			var user4 = new UserModel();
+			user4.FirstName = "James";
+			user4.LastName = "Madison";
+			user4.ProfileImagePath = "http://www.placehold.it/200x200";
+			user4.presidentialTerm = "1809-1817";
+
 
 			users.Add(user1);
 			users.Add(user2);
 			users.Add(user3);
+			users.Add(user4);
+
 
 
 			return users;
