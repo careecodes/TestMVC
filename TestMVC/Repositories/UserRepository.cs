@@ -17,19 +17,22 @@ namespace TestMVC.Repositories
 			user1.FirstName = "George";
 			user1.LastName = "Washington";
 			user1.ProfileImagePath = "http://www.placehold.it/200x200";
-            user1.formattedName = $"{user1.LastName}, {user1.FirstName}"; 
+            user1.presidentialTerm = "1789-1797";
 
-			var user2 = new UserModel();
+
+            var user2 = new UserModel();
 			user2.FirstName = "John";
 			user2.LastName = "Adams";
 			user2.ProfileImagePath = "http://www.placehold.it/200x200";
-			user2.formattedName = $"{user2.LastName}, {user2.FirstName}";
+			user2.presidentialTerm = "1797-1801";
+
 
 			var user3 = new UserModel();
 			user3.FirstName = "Thomas";
 			user3.LastName = "Jefferson";
 			user3.ProfileImagePath = "http://www.placehold.it/200x200";
-			user3.formattedName = $"{user3.LastName}, {user3.FirstName}";
+			user3.presidentialTerm = "1801-1809";
+
 
 			users.Add(user1);
 			users.Add(user2);
