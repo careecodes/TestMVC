@@ -1,32 +1,37 @@
-﻿@model TestMVC.Models.UserModel
+﻿@model List<TestMVC.Models.UserModel>
+@using TestMVC.Helpers
 
 <header>
 	<h1>U.S. Presidents</h1>
 </header>
 
-<!-- HOW DO I ITERATE THROUGH MY USERS!!!! -->
 <div class="user-container">
-	<div class="user">
-		<h2>@Model.FirstName @Model.LastName</h2>
-		<h3>@Model.presidentialTerm</h3>
-		<img src="@Model.ProfileImagePath"/>
-	</div>
+    @{ foreach(var user in Model) {
+		<div class="user">
+			<h2>@user.FirstName @user.LastName</h2>
+			<h3>@user.presidentialTerm</h3>
+			<img src="@user.ProfileImagePath"/>
+		</div>
+    }}
 
-	<div class="user">
-	    <h2>@Model.FirstName @Model.LastName</h2>
-	    <h3>@Model.presidentialTerm</h3>
-	    <img src="@Model.ProfileImagePath"/>
-	</div>
+	<hr>
 
-	<div class="user">
-	    <h2>@Model.FirstName @Model.LastName</h2>
-	    <h3>@Model.presidentialTerm</h3>
-	    <img src="@Model.ProfileImagePath"/>
-	</div>
+    @{ foreach(var user in Model) {
+        @Html.GetUserCard(user);
+    }}
 
-	<div class="user">
-        <h2>@Model.FirstName @Model.LastName</h2>
-        <h3>@Model.presidentialTerm</h3>
-        <img src="@Model.ProfileImagePath"/>
-    </div>
+    <hr>
+	
+	@{foreach (var user in Model) {
+	    @Html.Partial("UserCard", user)
+	}}
 </div>
+
+<!--
+
+Write own helpers
+
+Explore ViewBag
+
+
+-->

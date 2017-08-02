@@ -14,9 +14,11 @@ namespace TestMVC.Controllers
     {
         public ActionResult Index()
         {
+            @ViewBag.Title = "Hello World!";
+
             var users = UserRepository.GetUsers();
 
-            return View("Index", users[2]);
+            return View("Index", users);
         }
     }
 }

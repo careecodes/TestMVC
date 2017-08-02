@@ -9,6 +9,10 @@ namespace TestMVC.Models
         public string LastName { get; set; }
         public string ProfileImagePath { get; set; }
         public string presidentialTerm { get; set; }
+
+        public string GetTerm() {
+            return this.presidentialTerm;
+        }
     }
 }
 
