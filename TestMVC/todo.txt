@@ -1,0 +1,10 @@
+﻿before Tuesday
+add jquery library so we can ajax easily because cole is lazy
+
+on Tuesday
+do ajax calls to add/get against repository, and delete, and see them come back to default on restart
+
+in the future:
+
+add more details about the presidents so we can do detail vs high level view on the spa
+pictures of the presidents in an images folder

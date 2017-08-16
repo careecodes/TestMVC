@@ -18,7 +18,7 @@ namespace TestMVC.Controllers
 
             var users = UserRepository.GetUsers();
 
-            return View("Index", users.Model);
+            return View("Index", users);
         }
     }
 }

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<TestMVC.Models.UserModel>
+@using TestMVC.Helpers
+
+<header>
+	<h1>U.S. Presidents</h1>
+</header>
+
+<div class="user-container">
+    @{ foreach(var user in Model) {
+		<div class="user">
+			<h2>@user.FirstName @user.LastName</h2>
+			<h3>@user.presidentialTerm</h3>
+			<img src="@user.ProfileImagePath"/>
+		</div>
+    }}
+
+	<hr>
+
+    @{ foreach(var user in Model) {
+        @Html.GetUserCard(user);
+    }}
+
+    <hr>
+	
+	@{foreach (var user in Model) {
+	    @Html.Partial("UserCard", user)
+	}}
+</div>
+
+<!--
+
+Write own helpers
+
+Explore ViewBag
+
+object initialization after constructor
+
+-->
