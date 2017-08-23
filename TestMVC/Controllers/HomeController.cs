@@ -20,5 +20,7 @@ namespace TestMVC.Controllers
 
             return View("Index", users.Model);
         }
+
+        public ActionResult Test() { return Content("test"); }
     }
 }

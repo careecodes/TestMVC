@@ -93,8 +93,10 @@
     <Folder Include="Content\" />
     <Folder Include="Images\" />
     <Folder Include="Scripts\" />
+    <Folder Include="Views\Thing\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">

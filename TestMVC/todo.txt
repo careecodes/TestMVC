@@ -1,6 +1,4 @@
-﻿before Tuesday
-add jquery library so we can ajax easily because cole is lazy
-
+﻿
 on Tuesday
 do ajax calls to add/get against repository, and delete, and see them come back to default on restart
 
@@ -8,3 +6,13 @@ in the future:
 
 add more details about the presidents so we can do detail vs high level view on the spa
 pictures of the presidents in an images folder
+
+
+in the future:
+
+how does jquery get the data so damned fast from the server? It's C# and httpApplication and Controller but jQuery just gets the data
+why does it use localhost:41267. Why not just localhost?
+
+
+How does Cole get his AWS to run the build every five minutes and how do we replicate?
+
